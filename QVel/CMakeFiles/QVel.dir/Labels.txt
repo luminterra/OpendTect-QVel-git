@@ -1,0 +1,19 @@
+# Target labels
+ QVel
+# Source files and their labels
+C:/ODWork5/plugins/QVel/TpsGrid.cc
+C:/ODWork5/plugins/QVel/qvelpi.cc
+C:/ODWork5/plugins/QVel/qvelseistools.cc
+C:/ODWork5/plugins/QVel/qvelvolumebuilder.cc
+C:/ODWork5/plugins/QVel/linalg3d.h
+C:/ODWork5/plugins/QVel/ludecomposition.h
+C:/ODWork5/plugins/QVel/mywellhorpos.h
+C:/ODWork5/plugins/QVel/qveldeps.h
+C:/ODWork5/plugins/QVel/qvelhortools.h
+C:/ODWork5/plugins/QVel/qvellogtools.h
+C:/ODWork5/plugins/QVel/qvelmod.h
+C:/ODWork5/plugins/QVel/qvelseistools.h
+C:/ODWork5/plugins/QVel/qvelvolumebuilder.h
+C:/ODWork5/plugins/QVel/TpsGrid.h
+C:/ODWork5/plugins/QVel/tutmod.h
+C:/ODWork5/plugins/QVel/CMakeLists.txt

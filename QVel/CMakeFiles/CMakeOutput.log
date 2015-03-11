@@ -1,0 +1,186 @@
+The system is: Windows - 6.1 - x86
+Determining if the C compiler works passed with the following output:
+Change Dir: F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec4078469565.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine version 4.0.30319.18408
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/2/2014 12:00:01 PM.
+Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec4078469565.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec4078469565.dir\Debug\".
+  Creating directory "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec4078469565.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4078469565.pdb" /Gd /TC /analyze- /errorReport:queue F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\testCCompiler.c  /Zm1000 
+  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec4078469565.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4078469565.pdb" /Gd /TC /analyze- /errorReport:queue F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\testCCompiler.c  /Zm1000 
+  
+  testCCompiler.c
+ManifestResourceCompile:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.embed.manifest.res" cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565_manifest.rc 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4078469565.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4078469565.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4078469565.lib" /MACHINE:X86 cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.embed.manifest.res
+  cmTryCompileExec4078469565.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.embed.manifest" /manifest cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.embed.manifest.res" cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565_manifest.rc 
+LinkEmbedManifest:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4078469565.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4078469565.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4078469565.lib" /MACHINE:X86 cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.exe.embed.manifest.res
+  cmTryCompileExec4078469565.dir\Debug\testCCompiler.obj  /machine:X86 /debug 
+  cmTryCompileExec4078469565.vcxproj -> F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4078469565.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.unsuccessfulbuild".
+  Touching "cmTryCompileExec4078469565.dir\Debug\cmTryCompileExec4078469565.lastbuildstate".
+Done Building Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec4078469565.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.92
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec2994791758.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine version 4.0.30319.18408
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/2/2014 12:00:03 PM.
+Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec2994791758.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec2994791758.dir\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2994791758.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2994791758.pdb" /Gd /TC /analyze- /errorReport:queue "F:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"  /Zm1000 
+  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2994791758.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2994791758.pdb" /Gd /TC /analyze- /errorReport:queue "F:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"  /Zm1000 
+  
+  CMakeCCompilerABI.c
+ManifestResourceCompile:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.embed.manifest.res" cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758_manifest.rc 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2994791758.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2994791758.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2994791758.lib" /MACHINE:X86 cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.embed.manifest.res
+  cmTryCompileExec2994791758.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.embed.manifest" /manifest cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.embed.manifest.res" cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758_manifest.rc 
+LinkEmbedManifest:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2994791758.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2994791758.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2994791758.lib" /MACHINE:X86 cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.exe.embed.manifest.res
+  cmTryCompileExec2994791758.dir\Debug\CMakeCCompilerABI.obj  /machine:X86 /debug 
+  cmTryCompileExec2994791758.vcxproj -> F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2994791758.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.unsuccessfulbuild".
+  Touching "cmTryCompileExec2994791758.dir\Debug\cmTryCompileExec2994791758.lastbuildstate".
+Done Building Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec2994791758.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.51
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec3352127507.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine version 4.0.30319.18408
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/2/2014 12:00:05 PM.
+Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec3352127507.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3352127507.dir\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3352127507.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3352127507.pdb" /Gd /TP /analyze- /errorReport:queue F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\testCXXCompiler.cxx  /Zm1000 
+  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3352127507.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3352127507.pdb" /Gd /TP /analyze- /errorReport:queue F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\testCXXCompiler.cxx  /Zm1000 
+  
+  testCXXCompiler.cxx
+ManifestResourceCompile:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.embed.manifest.res" cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507_manifest.rc 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3352127507.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3352127507.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3352127507.lib" /MACHINE:X86 cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.embed.manifest.res
+  cmTryCompileExec3352127507.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.embed.manifest" /manifest cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.embed.manifest.res" cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507_manifest.rc 
+LinkEmbedManifest:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3352127507.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /ManifestFile:"cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3352127507.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3352127507.lib" /MACHINE:X86 cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.exe.embed.manifest.res
+  cmTryCompileExec3352127507.dir\Debug\testCXXCompiler.obj  /machine:X86 /debug 
+  cmTryCompileExec3352127507.vcxproj -> F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3352127507.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.unsuccessfulbuild".
+  Touching "cmTryCompileExec3352127507.dir\Debug\cmTryCompileExec3352127507.lastbuildstate".
+Done Building Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec3352127507.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.55
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec918272332.vcxproj /p:Configuration=Debug
+Microsoft (R) Build Engine version 4.0.30319.18408
+[Microsoft .NET Framework, version 4.0.30319.18444]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/2/2014 12:00:07 PM.
+Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec918272332.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec918272332.dir\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec918272332.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec918272332.pdb" /Gd /TP /analyze- /errorReport:queue "F:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+  Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 16.00.40219.01 for 80x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec918272332.dir\Debug\\" /Fd"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec918272332.pdb" /Gd /TP /analyze- /errorReport:queue "F:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+  
+  CMakeCXXCompilerABI.cpp
+ManifestResourceCompile:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.embed.manifest.res" cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332_manifest.rc 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec918272332.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec918272332.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec918272332.lib" /MACHINE:X86 cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.embed.manifest.res
+  cmTryCompileExec918272332.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
+Manifest:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.embed.manifest" /manifest cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.intermediate.manifest
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.embed.manifest.res" cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332_manifest.rc 
+LinkEmbedManifest:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec918272332.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec918272332.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/odwork32/ODWork/plugins/QVel/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec918272332.lib" /MACHINE:X86 cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.exe.embed.manifest.res
+  cmTryCompileExec918272332.dir\Debug\CMakeCXXCompilerABI.obj  /machine:X86 /debug 
+  cmTryCompileExec918272332.vcxproj -> F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec918272332.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.unsuccessfulbuild".
+  Touching "cmTryCompileExec918272332.dir\Debug\cmTryCompileExec918272332.lastbuildstate".
+Done Building Project "F:\odwork32\ODWork\plugins\QVel\CMakeFiles\CMakeTmp\cmTryCompileExec918272332.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.56
+
+

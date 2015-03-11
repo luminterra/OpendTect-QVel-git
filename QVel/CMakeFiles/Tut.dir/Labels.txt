@@ -1,0 +1,19 @@
+# Target labels
+ Tut
+# Source files and their labels
+F:/odwork32/ODWork/plugins/Tut/tutseistools.cc
+F:/odwork32/ODWork/plugins/Tut/tuthortools.cc
+F:/odwork32/ODWork/plugins/Tut/tutorialattrib.cc
+F:/odwork32/ODWork/plugins/Tut/tutlogtools.cc
+F:/odwork32/ODWork/plugins/Tut/tutpi.cc
+F:/ODT46_32/4.6.0/plugins/Tut/tuthortools.h
+F:/ODT46_32/4.6.0/plugins/Tut/tutlogtools.h
+F:/ODT46_32/4.6.0/plugins/Tut/tutmod.h
+F:/ODT46_32/4.6.0/plugins/Tut/tutorialattrib.h
+F:/ODT46_32/4.6.0/plugins/Tut/tutseistools.h
+F:/odwork32/ODWork/plugins/Tut/tuthortools.h
+F:/odwork32/ODWork/plugins/Tut/tutlogtools.h
+F:/odwork32/ODWork/plugins/Tut/tutmod.h
+F:/odwork32/ODWork/plugins/Tut/tutorialattrib.h
+F:/odwork32/ODWork/plugins/Tut/tutseistools.h
+F:/odwork32/ODWork/plugins/Tut/CMakeLists.txt

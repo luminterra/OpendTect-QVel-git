@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="TpsGrid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qvelpi.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qvelseistools.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qvelvolumebuilder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="linalg3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ludecomposition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mywellhorpos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qveldeps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qvelhortools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qvellogtools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qvelmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qvelseistools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="qvelvolumebuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TpsGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tutmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{373978C5-ED82-4373-A1A1-8B41CBE8D8FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2762FCCF-4565-434F-AE05-E3CECEECFCAC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

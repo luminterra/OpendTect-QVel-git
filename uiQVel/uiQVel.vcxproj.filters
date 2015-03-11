@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="uiqvelpi.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uiqvelseistools.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uiqvelwelltools.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uiqvelWellmarkerdlg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="uiqveldeps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uiqvelmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uiqvelseistools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uiqvelWellmarkerdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uiqvelwelltools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uitutmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{373978C5-ED82-4373-A1A1-8B41CBE8D8FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2762FCCF-4565-434F-AE05-E3CECEECFCAC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

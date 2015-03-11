@@ -1,0 +1,21 @@
+﻿Build started 12/22/2014 10:41:19 AM.
+     1>Project "F:\odwork32\ODWork\plugins\QVel\QVel.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "QVel.dir\RelWithDebInfo\QVel.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IF:/ODT46_32/4.6.0/include/uiODMain /IF:/ODT46_32/4.6.0/include/uiVis /IF:/ODT46_32/4.6.0/include/uiCoin /IF:/ODT46_32/4.6.0/include/visSurvey /IF:/ODT46_32/4.6.0/include/visBase /IF:/ODT46_32/4.6.0/include/SoOD /IF:/ODT46_32/4.6.0/include/Geometry /IF:/ODT46_32/4.6.0/include/General /IF:/ODT46_32/4.6.0/include/Algo /IF:/ODT46_32/4.6.0/include/Basic /IF:/ODT46_32/4.6.0/include/EarthModel /IF:/ODT46_32/4.6.0/include/MPEEngine /IF:/ODT46_32/4.6.0/include/AttributeEngine /IF:/ODT46_32/4.6.0/include/NLA /IF:/ODT46_32/4.6.0/include/Seis /IF:/ODT46_32/4.6.0/include/MMProc /IF:/ODT46_32/4.6.0/include/Network /IF:/ODT46_32/4.6.0/include/Well /IF:/ODT46_32/4.6.0/include/PreStackProcessing /IF:/ODT46_32/4.6.0/include/Velocity /IF:/ODT46_32/4.6.0/include/uiTools /IF:/ODT46_32/4.6.0/include/uiBase /IF:/ODT46_32/4.6.0/include/uiMPE /IF:/ODT46_32/4.6.0/include/uiAttributes /IF:/ODT46_32/4.6.0/include/uiPreStackProcessing /IF:/ODT46_32/4.6.0/include/uiSeis /IF:/ODT46_32/4.6.0/include/uiIo /IF:/ODT46_32/4.6.0/include/uiFlatView /IF:/ODT46_32/4.6.0/include/Usage /IF:/ODT46_32/4.6.0/include/uiVolumeProcessing /IF:/ODT46_32/4.6.0/include/uiVelocity /IF:/ODT46_32/4.6.0/include/VolumeProcessing /IF:/ODT46_32/4.6.0/include/Attributes /IF:/ODT46_32/4.6.0/include/uiNLA /IF:/ODT46_32/4.6.0/include/uiWellAttrib /IF:/ODT46_32/4.6.0/include/uiWell /IF:/ODT46_32/4.6.0/include/uiStrat /IF:/ODT46_32/4.6.0/include/Strat /IF:/ODT46_32/4.6.0/include/WellAttrib /IF:/ODT46_32/4.6.0/include/uiEMAttrib /IF:/ODT46_32/4.6.0/include/uiEarthModel /IF:/ODT46_32/4.6.0/include/EMAttrib /IF:/ODT46_32/4.6.0/include/uiViewer2D /IF:/odwork32/ODWork/plugins/QVel /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /Oy- /D mUsedVar= /D mUnusedVar= /D WIN32 /D _WINDOWS /D __win__ /D NDEBUG /D __hassymbols__ /D __win32__=1 /D __cmake__ /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D QVel_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /GR /Fo"QVel.dir\RelWithDebInfo\\" /Fd"F:/odwork32/ODWork/bin/win32/RelWithDebInfo/QVel.pdb" /Gd /TP /wd4244 /wd4305 /wd4189 /wd4127 /wd4512 /wd4267 /wd4267 /wd4101 /wd4996 /wd4273 /wd4275 /wd4251 /wd4800 /wd4100 /wd4355 /wd4250 /wd4121 /wd4505 /wd4018 /wd4389 /analyze- /errorReport:prompt F:\odwork32\ODWork\plugins\QVel\TpsGrid.cc F:\odwork32\ODWork\plugins\QVel\qvelpi.cc F:\odwork32\ODWork\plugins\QVel\qvelseistools.cc F:\odwork32\ODWork\plugins\QVel\qvelvolumebuilder.cc  /vmg /Zm1000 
+         TpsGrid.cc
+         qvelpi.cc
+     1>f:\odt46_32\4.6.0\include\basic\commondefs.h(115): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+     1>F:\ODT46_32\4.6.0\include\Basic\commondefs.h(115): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+         qvelseistools.cc
+         qvelvolumebuilder.cc
+     1>F:\odwork32\ODWork\plugins\QVel\qvelvolumebuilder.cc(16): fatal error C1083: Cannot open include file: 'list': No such file or directory
+     1>f:\odt46_32\4.6.0\include\basic\commondefs.h(115): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+     1>Done Building Project "F:\odwork32\ODWork\plugins\QVel\QVel.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.42

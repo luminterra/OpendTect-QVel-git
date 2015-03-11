@@ -1,0 +1,36 @@
+﻿Build started 12/27/2014 11:52:18 AM.
+     1>Project "F:\ODWork5\plugins\uiQVel\uiQVel.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "uiQVel.dir\Debug\uiQVel.unsuccessfulbuild".
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\ODWork5\bin\win32\Debug\uiQVel.dll" /INCREMENTAL /NOLOGO /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32 /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32/Debug /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32/Release /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32/Release/Debug kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib shlwapi.lib uiODMain.lib ..\..\bin\win32\Debug\QVel.lib uiODMain.lib uiVis.lib uiOSG.lib visSurvey.lib visBase.lib Geometry.lib General.lib Algo.lib Basic.lib EarthModel.lib MPEEngine.lib AttributeEngine.lib NLA.lib Seis.lib MMProc.lib Network.lib Well.lib PreStackProcessing.lib Velocity.lib uiTools.lib uiBase.lib uiMPE.lib uiAttributes.lib uiPreStackProcessing.lib uiSeis.lib uiIo.lib uiFlatView.lib Attributes.lib uiVolumeProcessing.lib uiVelocity.lib uiWell.lib uiStrat.lib Strat.lib uiEarthModel.lib VolumeProcessing.lib uiNLA.lib uiWellAttrib.lib WellAttrib.lib uiEMAttrib.lib EMAttrib.lib uiViewer2D.lib ..\..\bin\win32\Debug\QVel.lib ws2_32.lib shlwapi.lib uiODMain.lib uiVis.lib uiOSG.lib visSurvey.lib visBase.lib Geometry.lib General.lib Algo.lib Basic.lib EarthModel.lib MPEEngine.lib AttributeEngine.lib NLA.lib Seis.lib MMProc.lib Network.lib Well.lib PreStackProcessing.lib Velocity.lib uiTools.lib uiBase.lib uiMPE.lib uiAttributes.lib uiPreStackProcessing.lib uiSeis.lib uiIo.lib uiFlatView.lib Attributes.lib uiVolumeProcessing.lib uiVelocity.lib uiWell.lib uiStrat.lib Strat.lib uiEarthModel.lib VolumeProcessing.lib uiNLA.lib uiWellAttrib.lib WellAttrib.lib uiEMAttrib.lib EMAttrib.lib uiViewer2D.lib /MANIFEST /ManifestFile:"uiQVel.dir\Debug\uiQVel.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"F:/ODWork5/bin/win32/Debug/uiQVel.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/ODWork5/bin/win32/Debug/uiQVel.lib" /MACHINE:X86 /DLL uiQVel.dir\Debug\uiQVel.dll.embed.manifest.res
+         uiQVel.dir\Debug\uiqvelpi.obj
+         uiQVel.dir\Debug\uiqvelseistools.obj
+         uiQVel.dir\Debug\uiqvelwelltools.obj
+         uiQVel.dir\Debug\uiqvelWellmarkerdlg.obj  /machine:X86 
+            Creating library F:/ODWork5/bin/win32/Debug/uiQVel.lib and object F:/ODWork5/bin/win32/Debug/uiQVel.exp
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"uiQVel.dir\Debug\uiQVel.dll.embed.manifest" /manifest uiQVel.dir\Debug\uiQVel.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"uiQVel.dir\Debug\uiQVel.dll.embed.manifest.res" uiQVel.dir\Debug\uiQVel_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\ODWork5\bin\win32\Debug\uiQVel.dll" /INCREMENTAL /NOLOGO /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32 /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32/Debug /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32/Release /LIBPATH:F:/OPENDTECT_5/5.0.0/bin/win32/Release/Debug kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib shlwapi.lib uiODMain.lib ..\..\bin\win32\Debug\QVel.lib uiODMain.lib uiVis.lib uiOSG.lib visSurvey.lib visBase.lib Geometry.lib General.lib Algo.lib Basic.lib EarthModel.lib MPEEngine.lib AttributeEngine.lib NLA.lib Seis.lib MMProc.lib Network.lib Well.lib PreStackProcessing.lib Velocity.lib uiTools.lib uiBase.lib uiMPE.lib uiAttributes.lib uiPreStackProcessing.lib uiSeis.lib uiIo.lib uiFlatView.lib Attributes.lib uiVolumeProcessing.lib uiVelocity.lib uiWell.lib uiStrat.lib Strat.lib uiEarthModel.lib VolumeProcessing.lib uiNLA.lib uiWellAttrib.lib WellAttrib.lib uiEMAttrib.lib EMAttrib.lib uiViewer2D.lib ..\..\bin\win32\Debug\QVel.lib ws2_32.lib shlwapi.lib uiODMain.lib uiVis.lib uiOSG.lib visSurvey.lib visBase.lib Geometry.lib General.lib Algo.lib Basic.lib EarthModel.lib MPEEngine.lib AttributeEngine.lib NLA.lib Seis.lib MMProc.lib Network.lib Well.lib PreStackProcessing.lib Velocity.lib uiTools.lib uiBase.lib uiMPE.lib uiAttributes.lib uiPreStackProcessing.lib uiSeis.lib uiIo.lib uiFlatView.lib Attributes.lib uiVolumeProcessing.lib uiVelocity.lib uiWell.lib uiStrat.lib Strat.lib uiEarthModel.lib VolumeProcessing.lib uiNLA.lib uiWellAttrib.lib WellAttrib.lib uiEMAttrib.lib EMAttrib.lib uiViewer2D.lib /MANIFEST /ManifestFile:"uiQVel.dir\Debug\uiQVel.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"F:/ODWork5/bin/win32/Debug/uiQVel.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/ODWork5/bin/win32/Debug/uiQVel.lib" /MACHINE:X86 /DLL uiQVel.dir\Debug\uiQVel.dll.embed.manifest.res
+         uiQVel.dir\Debug\uiqvelpi.obj
+         uiQVel.dir\Debug\uiqvelseistools.obj
+         uiQVel.dir\Debug\uiqvelwelltools.obj
+         uiQVel.dir\Debug\uiqvelWellmarkerdlg.obj  /machine:X86 
+            Creating library F:/ODWork5/bin/win32/Debug/uiQVel.lib and object F:/ODWork5/bin/win32/Debug/uiQVel.exp
+         uiQVel.vcxproj -> F:\ODWork5\bin\win32\Debug\uiQVel.dll
+       FinalizeBuildStatus:
+         Deleting file "uiQVel.dir\Debug\uiQVel.unsuccessfulbuild".
+         Touching "uiQVel.dir\Debug\uiQVel.lastbuildstate".
+     1>Done Building Project "F:\ODWork5\plugins\uiQVel\uiQVel.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.85

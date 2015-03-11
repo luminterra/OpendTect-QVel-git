@@ -1,0 +1,14 @@
+# Target labels
+ uiQVel
+# Source files and their labels
+C:/ODWork5/plugins/uiQVel/uiqvelpi.cc
+C:/ODWork5/plugins/uiQVel/uiqvelseistools.cc
+C:/ODWork5/plugins/uiQVel/uiqvelwelltools.cc
+C:/ODWork5/plugins/uiQVel/uiqvelWellmarkerdlg.cc
+C:/ODWork5/plugins/uiQVel/uiqveldeps.h
+C:/ODWork5/plugins/uiQVel/uiqvelmod.h
+C:/ODWork5/plugins/uiQVel/uiqvelseistools.h
+C:/ODWork5/plugins/uiQVel/uiqvelWellmarkerdlg.h
+C:/ODWork5/plugins/uiQVel/uiqvelwelltools.h
+C:/ODWork5/plugins/uiQVel/uitutmod.h
+C:/ODWork5/plugins/uiQVel/CMakeLists.txt

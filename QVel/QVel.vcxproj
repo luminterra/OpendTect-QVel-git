@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{45F69C4F-D849-4A8B-8FB4-139D0072B016}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>QVel</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ODWork5\bin\win32\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QVel.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QVel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\opendtect_5\5.0.0\bin\win32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QVel.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QVel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\ODWork5\bin\win32\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">QVel.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">QVel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\ODWork5\bin\win32\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">QVel.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">QVel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /vmg /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4305;4189;4127;4512;4267;4267;4101;4996;4273;4275;4251;4800;4100;4355;4250;4121;4505;4018;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;_DEBUG;__win32__=1;__cmake__;CMAKE_INTDIR="Debug";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;_DEBUG;__win32__=1;__cmake__;CMAKE_INTDIR=\"Debug\";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:I386 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;shlwapi.lib;uiODMain.lib;uiODMain.lib;uiVis.lib;uiOSG.lib;visSurvey.lib;visBase.lib;Geometry.lib;General.lib;Algo.lib;Basic.lib;EarthModel.lib;MPEEngine.lib;AttributeEngine.lib;NLA.lib;Seis.lib;MMProc.lib;Network.lib;Well.lib;PreStackProcessing.lib;Velocity.lib;uiTools.lib;uiBase.lib;uiMPE.lib;uiAttributes.lib;uiPreStackProcessing.lib;uiSeis.lib;uiIo.lib;uiFlatView.lib;Attributes.lib;uiVolumeProcessing.lib;uiVelocity.lib;uiWell.lib;uiStrat.lib;Strat.lib;uiEarthModel.lib;VolumeProcessing.lib;uiNLA.lib;uiWellAttrib.lib;WellAttrib.lib;uiEMAttrib.lib;EMAttrib.lib;uiViewer2D.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/OPENDTECT_5/5.0.0/bin/win32;C:/OPENDTECT_5/5.0.0/bin/win32/$(Configuration);;C:/OPENDTECT_5/5.0.0/bin/win32/Release;C:/OPENDTECT_5/5.0.0/bin/win32/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/ODWork5/bin/win32/Debug/QVel.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/ODWork5/bin/win32/Debug/QVel.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /vmg /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\boost_1_49_0;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4305;4189;4127;4512;4267;4267;4101;4996;4273;4275;4251;4800;4100;4355;4250;4121;4505;4018;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;NDEBUG;__win32__=1;__cmake__;CMAKE_INTDIR="Release";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;NDEBUG;__win32__=1;__cmake__;CMAKE_INTDIR=\"Release\";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;shlwapi.lib;uiODMain.lib;uiODMain.lib;uiVis.lib;uiOSG.lib;visSurvey.lib;visBase.lib;Geometry.lib;General.lib;Algo.lib;Basic.lib;EarthModel.lib;MPEEngine.lib;AttributeEngine.lib;NLA.lib;Seis.lib;MMProc.lib;Network.lib;Well.lib;PreStackProcessing.lib;Velocity.lib;uiTools.lib;uiBase.lib;uiMPE.lib;uiAttributes.lib;uiPreStackProcessing.lib;uiSeis.lib;uiIo.lib;uiFlatView.lib;Attributes.lib;uiVolumeProcessing.lib;uiVelocity.lib;uiWell.lib;uiStrat.lib;Strat.lib;uiEarthModel.lib;VolumeProcessing.lib;uiNLA.lib;uiWellAttrib.lib;WellAttrib.lib;uiEMAttrib.lib;EMAttrib.lib;uiViewer2D.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/OPENDTECT_5/5.0.0/bin/win32;C:/OPENDTECT_5/5.0.0/bin/win32/$(Configuration);;C:/OPENDTECT_5/5.0.0/bin/win32/Release;C:/OPENDTECT_5/5.0.0/bin/win32/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/ODWork5/bin/win32/Release/QVel.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/ODWork5/bin/win32/Release/QVel.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /vmg /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4305;4189;4127;4512;4267;4267;4101;4996;4273;4275;4251;4800;4100;4355;4250;4121;4505;4018;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;NDEBUG;__win32__=1;__cmake__;CMAKE_INTDIR="MinSizeRel";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;NDEBUG;__win32__=1;__cmake__;CMAKE_INTDIR=\"MinSizeRel\";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;shlwapi.lib;uiODMain.lib;uiODMain.lib;uiVis.lib;uiOSG.lib;visSurvey.lib;visBase.lib;Geometry.lib;General.lib;Algo.lib;Basic.lib;EarthModel.lib;MPEEngine.lib;AttributeEngine.lib;NLA.lib;Seis.lib;MMProc.lib;Network.lib;Well.lib;PreStackProcessing.lib;Velocity.lib;uiTools.lib;uiBase.lib;uiMPE.lib;uiAttributes.lib;uiPreStackProcessing.lib;uiSeis.lib;uiIo.lib;uiFlatView.lib;Attributes.lib;uiVolumeProcessing.lib;uiVelocity.lib;uiWell.lib;uiStrat.lib;Strat.lib;uiEarthModel.lib;VolumeProcessing.lib;uiNLA.lib;uiWellAttrib.lib;WellAttrib.lib;uiEMAttrib.lib;EMAttrib.lib;uiViewer2D.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/OPENDTECT_5/5.0.0/bin/win32;C:/OPENDTECT_5/5.0.0/bin/win32/$(Configuration);;C:/OPENDTECT_5/5.0.0/bin/win32/Release;C:/OPENDTECT_5/5.0.0/bin/win32/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/ODWork5/bin/win32/MinSizeRel/QVel.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/ODWork5/bin/win32/MinSizeRel/QVel.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /vmg /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4305;4189;4127;4512;4267;4267;4101;4996;4273;4275;4251;4800;4100;4355;4250;4121;4505;4018;4389</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;NDEBUG;__hassymbols__;__win32__=1;__cmake__;CMAKE_INTDIR="RelWithDebInfo";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>mUsedVar=;mUnusedVar=;WIN32;_WINDOWS;__win__;NDEBUG;__hassymbols__;__win32__=1;__cmake__;CMAKE_INTDIR=\"RelWithDebInfo\";QVel_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OPENDTECT_5\5.0.0_releasebuild\include\uiODMain;C:\OPENDTECT_5\5.0.0\include\uiODMain;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVis;C:\OPENDTECT_5\5.0.0\include\uiVis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiOSG;C:\OPENDTECT_5\5.0.0\include\uiOSG;C:\OPENDTECT_5\5.0.0_releasebuild\include\visSurvey;C:\OPENDTECT_5\5.0.0\include\visSurvey;C:\OPENDTECT_5\5.0.0_releasebuild\include\visBase;C:\OPENDTECT_5\5.0.0\include\visBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\Geometry;C:\OPENDTECT_5\5.0.0\include\Geometry;C:\OPENDTECT_5\5.0.0_releasebuild\include\General;C:\OPENDTECT_5\5.0.0\include\General;C:\OPENDTECT_5\5.0.0_releasebuild\include\Algo;C:\OPENDTECT_5\5.0.0\include\Algo;C:\OPENDTECT_5\5.0.0_releasebuild\include\Basic;C:\OPENDTECT_5\5.0.0\include\Basic;C:\OPENDTECT_5\5.0.0_releasebuild\include\EarthModel;C:\OPENDTECT_5\5.0.0\include\EarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\MPEEngine;C:\OPENDTECT_5\5.0.0\include\MPEEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\AttributeEngine;C:\OPENDTECT_5\5.0.0\include\AttributeEngine;C:\OPENDTECT_5\5.0.0_releasebuild\include\NLA;C:\OPENDTECT_5\5.0.0\include\NLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\Seis;C:\OPENDTECT_5\5.0.0\include\Seis;C:\OPENDTECT_5\5.0.0_releasebuild\include\MMProc;C:\OPENDTECT_5\5.0.0\include\MMProc;C:\OPENDTECT_5\5.0.0_releasebuild\include\Network;C:\OPENDTECT_5\5.0.0\include\Network;C:\OPENDTECT_5\5.0.0_releasebuild\include\Well;C:\OPENDTECT_5\5.0.0\include\Well;C:\OPENDTECT_5\5.0.0_releasebuild\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0\include\PreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\Velocity;C:\OPENDTECT_5\5.0.0\include\Velocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiTools;C:\OPENDTECT_5\5.0.0\include\uiTools;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiBase;C:\OPENDTECT_5\5.0.0\include\uiBase;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiMPE;C:\OPENDTECT_5\5.0.0\include\uiMPE;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiAttributes;C:\OPENDTECT_5\5.0.0\include\uiAttributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0\include\uiPreStackProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiSeis;C:\OPENDTECT_5\5.0.0\include\uiSeis;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiIo;C:\OPENDTECT_5\5.0.0\include\uiIo;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiFlatView;C:\OPENDTECT_5\5.0.0\include\uiFlatView;C:\OPENDTECT_5\5.0.0_releasebuild\include\Attributes;C:\OPENDTECT_5\5.0.0\include\Attributes;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0\include\uiVolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiVelocity;C:\OPENDTECT_5\5.0.0\include\uiVelocity;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWell;C:\OPENDTECT_5\5.0.0\include\uiWell;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiStrat;C:\OPENDTECT_5\5.0.0\include\uiStrat;C:\OPENDTECT_5\5.0.0_releasebuild\include\Strat;C:\OPENDTECT_5\5.0.0\include\Strat;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEarthModel;C:\OPENDTECT_5\5.0.0\include\uiEarthModel;C:\OPENDTECT_5\5.0.0_releasebuild\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0\include\VolumeProcessing;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiNLA;C:\OPENDTECT_5\5.0.0\include\uiNLA;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0\include\uiWellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\WellAttrib;C:\OPENDTECT_5\5.0.0\include\WellAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0\include\uiEMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\EMAttrib;C:\OPENDTECT_5\5.0.0\include\EMAttrib;C:\OPENDTECT_5\5.0.0_releasebuild\include\uiViewer2D;C:\OPENDTECT_5\5.0.0\include\uiViewer2D;C:\ODWork5\plugins\QVel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:I386 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;shlwapi.lib;uiODMain.lib;uiODMain.lib;uiVis.lib;uiOSG.lib;visSurvey.lib;visBase.lib;Geometry.lib;General.lib;Algo.lib;Basic.lib;EarthModel.lib;MPEEngine.lib;AttributeEngine.lib;NLA.lib;Seis.lib;MMProc.lib;Network.lib;Well.lib;PreStackProcessing.lib;Velocity.lib;uiTools.lib;uiBase.lib;uiMPE.lib;uiAttributes.lib;uiPreStackProcessing.lib;uiSeis.lib;uiIo.lib;uiFlatView.lib;Attributes.lib;uiVolumeProcessing.lib;uiVelocity.lib;uiWell.lib;uiStrat.lib;Strat.lib;uiEarthModel.lib;VolumeProcessing.lib;uiNLA.lib;uiWellAttrib.lib;WellAttrib.lib;uiEMAttrib.lib;EMAttrib.lib;uiViewer2D.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/OPENDTECT_5/5.0.0/bin/win32;C:/OPENDTECT_5/5.0.0/bin/win32/$(Configuration);;C:/OPENDTECT_5/5.0.0/bin/win32/Release;C:/OPENDTECT_5/5.0.0/bin/win32/Release/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/ODWork5/bin/win32/RelWithDebInfo/QVel.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/ODWork5/bin/win32/RelWithDebInfo/QVel.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/ODWork5/plugins/QVel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/ODWork5 -BC:/ODWork5 --check-stamp-file C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/ODWork5/plugins/QVel/CMakeLists.txt;C:\ODWork5\plugins\QVel\CMakeLists.txt;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moddeps.h.in;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moduleheader.h.in;C:\ODWork5\plugins\QVel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/ODWork5/plugins/QVel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/ODWork5 -BC:/ODWork5 --check-stamp-file C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/ODWork5/plugins/QVel/CMakeLists.txt;C:\ODWork5\plugins\QVel\CMakeLists.txt;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moddeps.h.in;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moduleheader.h.in;C:\ODWork5\plugins\QVel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/ODWork5/plugins/QVel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/ODWork5 -BC:/ODWork5 --check-stamp-file C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/ODWork5/plugins/QVel/CMakeLists.txt;C:\ODWork5\plugins\QVel\CMakeLists.txt;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moddeps.h.in;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moduleheader.h.in;C:\ODWork5\plugins\QVel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/ODWork5/plugins/QVel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake 2.8\bin\cmake.exe" -HC:/ODWork5 -BC:/ODWork5 --check-stamp-file C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/ODWork5/plugins/QVel/CMakeLists.txt;C:\ODWork5\plugins\QVel\CMakeLists.txt;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moddeps.h.in;C:\OPENDTECT_5\5.0.0\CMakeModules\templates\moduleheader.h.in;C:\ODWork5\plugins\QVel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\ODWork5\plugins\QVel\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="linalg3d.h" />
+    <ClInclude Include="ludecomposition.h" />
+    <ClInclude Include="mywellhorpos.h" />
+    <ClInclude Include="qveldeps.h" />
+    <ClInclude Include="qvelhortools.h" />
+    <ClInclude Include="qvellogtools.h" />
+    <ClInclude Include="qvelmod.h" />
+    <ClInclude Include="qvelseistools.h" />
+    <ClInclude Include="qvelvolumebuilder.h" />
+    <ClInclude Include="TpsGrid.h" />
+    <ClInclude Include="tutmod.h" />
+    <ClCompile Include="TpsGrid.cc" />
+    <ClCompile Include="qvelpi.cc" />
+    <ClCompile Include="qvelseistools.cc" />
+    <ClCompile Include="qvelvolumebuilder.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/ODWork5/ZERO_CHECK.vcxproj">
+      <Project>5B02B32B-70D6-43A6-8856-8987B10559FA</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
