@@ -38,6 +38,7 @@ Ver 1.2 JB West 5/2012
 #include "ioman.h"
 #include "bufstring.h"
 //#include "tutmod.h"
+#include <iostream>
 #ifdef __GNUC__
 #include <sys/stat.h>
 #else
@@ -77,8 +78,8 @@ namespace QVel
 #endif
     tracef = fopen("/temp/QVelSeis.log","w");
     if (tracef == NULL) UsrMsg("Cannot create /tmp/QVel.log\n");
-    if (tracef != NULL) fprintf(tracef,"BEGIN RUN\n");
-
+    if (tracef != NULL) fprintf(tracef,"BEGIN QVEL SEIS RUN\n");
+	if (tracef != NULL) fflush(tracef);
 	}
 
 
@@ -106,7 +107,7 @@ namespace QVel
 	{  delete inioobj_; inioobj_ = ioobj.clone(); }
 
 	void QVel::SeisTools::setOutput( const IOObj& ioobj )
-	{ delete outioobj_; outioobj_ = ioobj.clone(); }
+	{ delete outioobj_; outioobj_ =  ioobj.clone()  ; }
 
 	void QVel::SeisTools::setHorizons(TypeSet<MultiID> horizons)
 	{ horizons_ = horizons; numHorizons_ = horizons.nrItems();}
@@ -116,7 +117,7 @@ namespace QVel
 	{
 		const char * b = errmsg_.getFullString();
 		return errmsg_.isEmpty() ? "Calculating..." : b;
-		return "a";
+		//return "a";
 	}
 
 	// Executor
@@ -210,6 +211,7 @@ namespace QVel
 		// more to do in volBuilder
 		if (qvelStatus_ !=Executor::Finished())
 		{
+			
 			qvelStatus_ = volBuilder_->nextStep();
 			if (qvelStatus_ !=Executor::Finished())
 				return Executor::MoreToDo();
@@ -225,6 +227,7 @@ namespace QVel
 		//if (tracef) fprintf(tracef,"Handleing traces\n");
 		// Done with interval-based velocity volume building
 		// handle input seismic
+		
 		if (inioobj_)
 		{
 			int rv = rdr_->get( trcin_.info() );

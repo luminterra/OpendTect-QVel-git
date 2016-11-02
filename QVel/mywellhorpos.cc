@@ -24,7 +24,7 @@ myWellHorIntersectFinder::myWellHorIntersectFinder( const Well::Track& tr,
 						const Well::D2TModel* d2t )
     : track_(tr)
     , d2t_(d2t)  
-{ tracef = fopen("/temp/tracewh.out","w");
+{ 
 }
 
 
@@ -44,37 +44,42 @@ float myWellHorIntersectFinder::findZIntersection() const
     const Interval<float>& dahrg = track_.dahRange();
     float zstart = d2t_ ? d2t_->getTime( dahrg.start, track_ ) : dahrg.start;
     float zstop = d2t_ ? d2t_->getTime( dahrg.stop, track_ ) : dahrg.stop;
+	fprintf(tracef,"\nBegin intersection dahrg %g %g z %g %g\n",dahrg.start,dahrg.stop,zstart,zstop);
     zstart = mMAX( SI().zRange(true).start, zstart );
     zstop = mMIN( SI().zRange(true).stop, zstop );
 
     float zval = zstart; 
     bool isabove = true;
     bool firstvalidzfound = false;
-
+	
     while ( zval < zstop )
     {
-	fprintf(tracef,"zval %g zstop %g zsttep %g\n");
+	
 	const float dah = d2t_ ? d2t_->getDah( zval, track_ ) : zval;
 	const Coord3& crd = track_.getPos( dah );
 	const float horz = intersectPosHor( crd );
-
+	fprintf(tracef,"zval %g zstop %g  horizon t %g\n",zval,zstop,horz);
 	if ( mIsUdf( horz ) ) 
 	{
 	    zval += zstep;
-	    fprintf(tracef,"miss, new zval %g\n",tracef);
+	    fprintf(tracef,"  miss, new zval %g\n",zval);
 	    continue;
 	}
-fprintf(tracef,"hit, new zval %g\n",horz);
+fprintf(tracef,"   hit, new zval %g\n",zval);
 	if ( !firstvalidzfound )
 	{
 	    isabove = zval >= horz;
 	    firstvalidzfound = true;
+		fprintf(tracef,"first valid z\n");
 	}
 
-	if ( ( isabove && horz >= zval ) || ( !isabove && horz <= zval ) )
+	if ( ( isabove && horz >= zval ) || ( !isabove && horz <= zval ) ) {
+		fprintf(tracef,"return horz %g\n",horz);
+	
 	    return horz;
-fprintf(tracef,"skip, new zval %g\n",horz);
-	zval += zstep;
+	}
+	  zval += zstep;
+	   fprintf(tracef,"   skip, new zval %g\n",zval);
     }
     fprintf(tracef,"miss!, new zval %g\n",zval);
     return mUdf( float );
@@ -85,7 +90,7 @@ float myWellHorIntersectFinder::intersectPosHor( const Coord3& pos ) const
 {
     const BinID& bid = SI().transform( pos );
     if ( !SI().isInside( bid, true ) ) {
-	fprintf(tracef,"not inaside\n");
+	fprintf(tracef,"pos is NOT not inside %g %g %g\n",pos.x, pos.y, pos.z);
        return mUdf( float );	
     }
 
@@ -93,10 +98,11 @@ float myWellHorIntersectFinder::intersectPosHor( const Coord3& pos ) const
     {
 	const EM::SubID subid = bid.toInt64();
 	const Coord3& horpos = hor3d_->getPos( hor3d_->sectionID(0), subid ); 
+	fprintf(tracef,"horpos %g %g %g\n",horpos.x, horpos.y, horpos.z);
 	const BinID horbid = SI().transform( horpos );
-	fprintf(tracef,"not inaside\n");
+	fprintf(tracef,"horpos %g %g %g from pos %g %g\n",horpos.x, horpos.y, horpos.z,pos.x, pos.y);
 	if ( bid == horbid ) {
-	    fprintf(tracef,"found %g\n",horpos.z);
+	    fprintf(tracef,"horizon found %g\n",horpos.z);
 	    return (float)horpos.z;
 	} else
 	    fprintf(tracef," beid != horbid\n");

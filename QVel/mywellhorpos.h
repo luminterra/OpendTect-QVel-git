@@ -25,7 +25,7 @@ namespace EM { class Horizon2D; class Horizon3D; }
 intersection is possible ( in case of faults or deviated tracks along the
 horizon ) but only one pos will be returned.
 */
-
+static FILE *tracef = fopen("/temp/tracewh.out","w");
 mExpClass(WellAttrib) myWellHorIntersectFinder
 {
 public:
@@ -46,7 +46,7 @@ protected:
     const EM::Horizon3D*	hor3d_;
 
     float			intersectPosHor(const Coord3&) const;
-    FILE * tracef;
+    
 };
 
 #endif

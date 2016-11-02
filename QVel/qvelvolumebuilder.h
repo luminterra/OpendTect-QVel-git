@@ -68,7 +68,12 @@ namespace QVel
 	const char* assocMarkers;
     }
     HorizonMarkersList;
-
+	typedef struct {
+		double x;
+		double y;
+		double z;
+		int	   ihorz;
+	} wellIntersectionStruct_;
 /*!Reads in a volume Vint, and writes out a volume
     Vint. */
 
@@ -102,6 +107,7 @@ public:
 	int   nrTraces() { return nrTraces_; }
 	Array2DImpl<double>** intVels_;
 	Array2DImpl<float>** horizonTimes_;
+	Array2DImpl<float>** rawHorizonTimes_;
 	BufferStringSet  *horizonNames_;
 	Array2DImpl<double>*  weights_;
 	int nrows_;
@@ -135,7 +141,7 @@ public:
 	CubeSampling cs_;
 	int nrdone_;
 	int totnr_;
-	BufferString getMessages() { return messages_; }
+	BufferString getMessages() { if (tracef) fprintf(tracef,"Messages: %s\n",messages_.str()); return messages_; }
 	enum Gridder { InverseDx, ThinPlateSpline };
 	double * getWellModelVelocities(int nsampls, double dt, int nrows, int ncols, int irow, int icol,
 	    Array2DImpl<double>* weights,Array2DImpl<float>* counts, Array2DImpl<double>* weightsTable);
@@ -156,7 +162,7 @@ protected:
 		int nrows,
 		int ncols,
 		bool userMarkers,
-		Array2DImpl<double>* weightsTable);
+		Array2DImpl<double>* weightsTable, wellIntersectionStruct_ * wellInter);
 	float adjustTraceVels(float inputTraceVel, 
 						  float inputModelVel, 
 						  double errorCorrection, 
@@ -185,17 +191,17 @@ protected:
 	float horizonTime(Array2DImpl<float>* horz, int irow, int icol);
 	int   getNrTraces() { return nrTraces_; }
 	float intersectWell(MultiID well, int &irow, int &icol, float &zval,Array2DImpl<float>*  horz);
-	void computeWellIntersections(TypeSet<MultiID> selectedWells, int numWells, int ihorz, Coord3 *wellIntersections,
-	   Array2DImpl<float>* topH, Array2DImpl<float>* botH );
+	void computeWellIntersections(TypeSet<MultiID> selectedWells, int numWells, int ihorz, wellIntersectionStruct_ *wellIntersections,
+	   Array2DImpl<float>* topH, Array2DImpl<float>* botH,Array2DImpl<float>* topHe, Array2DImpl<float>* botHe  );
 	void getWellHorizonVelocities(int ihorz, double dt, int nrows, int ncols, int irow, int icol,
-	float topH, float botH,Coord3  **wellIntersections, float * veltrace,Array2DImpl<double>* weightsTable );
+	float topH, float botH,wellIntersectionStruct_  **wellIntersections, float * veltrace,Array2DImpl<double>* weightsTable );
 
 	template <class T>
 	void handleMissing(Array2DImpl<T> *topH, 
 					   Array2DImpl<T> *botH, 
 					   int nrows,
 					   int ncols);
-
+    bool fixMissing(int jhorz, int jrow, int jcol, float * horizonTmin, float * horizonTmax, int numHoriz);
 	void expandHorizon(Array2DImpl<float>* outH, 
 			Array2D<float> *inH, 
 			StepInterval<int> rowrg, 
@@ -223,7 +229,7 @@ protected:
 	void addControlPoint(int wrow, int wcol,float intVel, int nrows,int ncols);
 	void computeTDCVels(Array2DImpl<float> *topH,Array2DImpl<float> *botH, int ihorz, int nrows, int ncols);
 	void initWellTracks();
-	
+	void filloutZTH(int fromhz, int tohz, float * horizonTmin, float * horizonTmax);
 
     SeisTrcReader* rdr_;
 	SeisTrcWriter* wrr_;
@@ -234,6 +240,8 @@ protected:
 	int			ihorz_;
 	Array2DImpl<float>* topH_;
 	Array2DImpl<float>* botH_;
+	Array2DImpl<float>* topHextend_;
+	Array2DImpl<float>* botHextend_;
 	Array2DImpl<float>* botH0_;
 	int			nrTraces_;
 	float		radius_;
@@ -255,7 +263,7 @@ protected:
 	int			gridder_;
 	float		relaxation_;
 	int numWells_;
-	Coord3  **wellIntersections_;
+	wellIntersectionStruct_  **wellIntersections_;
 	FILE	*tracef;
 	float *** TDCHmodel;
 	bool isTDC_;
