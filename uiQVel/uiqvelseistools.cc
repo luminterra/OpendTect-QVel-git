@@ -15,6 +15,7 @@ Ver 1.1 JB West 4/2012
 
 #include "cubesampling.h"
 #include "uiseissel.h"
+#include "uiveldesc.h"
 #include "uigeninput.h"
 #include "uiseissubsel.h"
 #include "uitaskrunner.h"
@@ -77,8 +78,8 @@ uiQVelSeisTools::uiQVelSeisTools( uiParent* p, Seis::GeomType gt )
     : uiDialog( p, Setup( "QVel Velocity Model builder",
     "Specify QVel Velocity Model parameters",
     "qvel/index.html") )
-    , inctio_(*mMkCtxtIOObj(SeisTrc))
-    , outctio_(*mMkCtxtIOObj(SeisTrc))
+    //, inctio_(*mMkCtxtIOObj(SeisTrc))
+   // , outctio_(*mMkCtxtIOObj(SeisTrc))
     , geom_(gt)
     , tool_(*new QVel::SeisTools)
     , wtool_(0)
@@ -86,18 +87,27 @@ uiQVelSeisTools::uiQVelSeisTools( uiParent* p, Seis::GeomType gt )
     , isvel_(false)
     , gridder_(QVel::QVelVolumeBuilder::ThinPlateSpline)
     , wmt_(0)
+	
 
 {
     const CallBack inpcb( mCB(this,uiQVelSeisTools,inpSel) );
-
+	const CallBack inpcb2( mCB(this,uiQVelSeisTools,inpCheck) );
     subselfld_ = uiSeisSubSel::get( this, Seis::SelSetup(geom_) );
 
+	inpcheck_ = new uiCheckBox(this,"Add Stacking velocities input",inpcb2);
+	inpcheck_->attach(alignedBelow, subselfld_);
     // The input stacking vels seismic object
-    inpfld_ = new uiSeisSel( this, inctio_, uiSeisSel::Setup(geom_) );
+    inpfld_ = new uiVelSel( this, uiVelSel::ioContext() /* inctio_ */ , uiVelSel::Setup(geom_) );
     inpfld_->selectionDone.notify( inpcb );
-    inpfld_->attach( alignedBelow, subselfld_ );
+    inpfld_->attach( alignedBelow, inpcheck_ );
+	const IOObj* inioobj = inpfld_->ioobj( true );
+			// 'true' prevents error message if nothing selected
     inpfld_->setEmpty();
+	inpfld_->clear();
+	inpfld_->setChecked(true);
+	inpfld_->setInput((const MultiID &)NULL);
     inpfld_->setCaption("Optional Stacking Velocity Cube");
+	inpfld_->setSensitive(false);
 
     // calibrate toggle
     calibfld_ = new uiGenInput( this, "Calibrate input Stacking Velocities",
@@ -182,8 +192,8 @@ uiQVelSeisTools::uiQVelSeisTools( uiParent* p, Seis::GeomType gt )
     powerfld_->setToolTip("Select power N for 1/(R ** N) falloff [.5--2];\ne.g. 2 means 1/r**2");
 
     // The output seismic object
-    outctio_.ctxt.forread = false;
-    outfld_ = new uiSeisSel( this, outctio_, uiSeisSel::Setup(geom_) );
+    //outctio_.ctxt.forread = false;
+    outfld_ = new uiSeisSel( this, uiSeisSel::ioContext(geom_,false) /* outctio_ */, uiSeisSel::Setup(geom_) );
     outfld_->attach( alignedBelow, powerfld_ );
     cs_ = new CubeSampling(true);
 
@@ -192,8 +202,8 @@ uiQVelSeisTools::uiQVelSeisTools( uiParent* p, Seis::GeomType gt )
 
 uiQVelSeisTools::~uiQVelSeisTools()
 {
-    delete inctio_.ioobj; delete &inctio_;
-    delete outctio_.ioobj; delete &outctio_;
+   // delete inctio_.ioobj; delete &inctio_;
+   // delete outctio_.ioobj; delete &outctio_;
     if (wtool_)
 	delete wtool_;
    delete &tool_;
@@ -222,7 +232,7 @@ bool uiQVelSeisTools::acceptOK( CallBacker* )
 
 	// horizons
 	if (surfaceids_.nrItems() < 1)
-	    if (!useTDC_)
+	    if (!usemarkerfld_->getBoolValue())
 		mErrRet("Missing Input\nPlease select at least one input horizon,\n and/or use T/D curves to build model");
     // No Horizons -- we are TDC
 
@@ -255,16 +265,21 @@ bool uiQVelSeisTools::acceptOK( CallBacker* )
     tool_.setRange( cs );
 
     // input file (optional)
-    if ( inpfld_->commitInput() )
+    if ( inpfld_->commitInput() && inpcheck_->isChecked() )
     {
-	if (!inpfld_->isEmpty())
-	    tool_.setInput( *inctio_.ioobj );
+	if (!inpfld_->isEmpty()) {
+		const IOObj* inioobj = inpfld_->ioobj();
+        if ( !inioobj )
+	    tool_.setInput( *inioobj );
+	}
     }
 
     tool_.setIsVel(isvel_);
 
     // output
-    tool_.setOutput( *outctio_.ioobj );
+	
+    const IOObj* outioobj = outfld_->ioobj();
+    tool_.setOutput( *outioobj );
     bool applyall = calibfld_->getBoolValue();
     tool_.setCalibApplyAll(applyall);
 
@@ -310,33 +325,40 @@ bool uiQVelSeisTools::acceptOK( CallBacker* )
 
 void uiQVelSeisTools::inpSel( CallBacker* )
 {
-    if ( !inpfld_->commitInput() || !inctio_.ioobj ) return;
-    {
-	VelocityDesc veldesc;
-	isvel_ = veldesc.usePar( (*inctio_.ioobj).pars() ) &&
-	    veldesc.isVelocity();
-	
-	const bool hasveldesc = veldesc.usePar( (*inctio_.ioobj).pars() );
-	
+	const IOObj* inioobj = inpfld_->ioobj( );
 
-	if (!isvel_) {
-	    uiMSG().warning("Input seismic isn't tagged as a velocity type.\n","I will assume it to be Interval Velocity.");
-	    isvel_ = true;
-	}
-	else if ( isvel_ && veldesc.type_ != VelocityDesc::Interval)
+	if ( /*!inpfld_->commitInput() ||*/ !inioobj ) return;
 	{
-	    uiMSG().warning("Input seismic is Velocity, but isn't Interval velocity.\n","Sorry, I can't convert velocity types.");
-	    isvel_ = false;
-	}
-	bool velintime = ZDomain::isTime(( *inctio_.ioobj).pars() );
-	if (isvel_ && !velintime)
-	{
-	    uiMSG().warning("Input seismic velocity isn't Time domain.\n","Only the trace extents will be used.");
-	    isvel_ = false;
+		VelocityDesc veldesc;
+#if 0		
+		const bool hasveldesc = veldesc.usePar( (inioobj)->pars() );
+		if (hasveldesc)
+		uiMSG().warning("hasveldesc\n");
+		else
+			uiMSG().warning("not hasveldesc\n");
+#endif
+		isvel_ = veldesc.usePar( (inioobj)->pars() ) &&
+			veldesc.isVelocity();
+
+		if (!isvel_) {
+			uiMSG().warning("Input seismic isn't tagged as a velocity type.\n","Only the volume extents will be used");
+			isvel_ = false;
+		}
+		else if ( isvel_ && veldesc.type_ != VelocityDesc::Interval)
+		{
+			uiMSG().warning("Input seismic is Velocity, but isn't Interval velocity.\n","Sorry, I can't convert velocity types.");
+			isvel_ = false;
+		}
+		bool velintime = ZDomain::isTime(( *inioobj).pars() );
+		if (isvel_ && !velintime)
+		{
+			uiMSG().warning("Input seismic velocity isn't Time domain.\n","Only the volume extents will be used.");
+			isvel_ = false;
+		}
+
 	}
 
-    }
-    calibfld_->setSensitive(isvel_);
+	calibfld_->setSensitive(isvel_);
 }
 void uiQVelSeisTools::hrzButPush( CallBacker* b )
 {
@@ -496,4 +518,15 @@ void uiQVelSeisTools::useTDCTog( CallBacker* b )
 	gridderfld_->setSensitive(true);
 	inpfld_->setSensitive(true);
     }
+}
+
+void uiQVelSeisTools::inpCheck(CallBacker *b)
+{
+	if (inpcheck_->isChecked()) {
+		inpfld_->setSensitive(true);
+		inpfld_->clear(); // jbw doesn't work
+		uiQVelSeisTools::inpSel(NULL);
+	}
+	else
+		inpfld_->setSensitive(false);
 }

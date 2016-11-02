@@ -17,6 +17,8 @@ Ver 1.1 JB West 4/2012
 #define uiqvelseistools_h
 
 #include "uidialog.h"
+#include "uichecklist.h"
+#include "uiveldesc.h"
 #include "uibutton.h"
 #include "uilabel.h"
 #include "seistype.h"
@@ -42,11 +44,12 @@ public:
 
 protected:
 
-    CtxtIOObj&		inctio_;
-    CtxtIOObj&		outctio_;
+   // CtxtIOObj&		inctio_;
+   // CtxtIOObj&		outctio_;
     Seis::GeomType	geom_;
     QVel::SeisTools&	tool_;
-    uiSeisSel*		inpfld_;
+	uiCheckBox*     inpcheck_;
+    uiVelSel*		inpfld_;
     uiSeisSubSel*	subselfld_;
     uiSeisSel*		outfld_;
     uiGroup*		scalegrp_;
@@ -83,6 +86,7 @@ protected:
     void		useMarkTog( CallBacker* b );
     void		useTDCTog( CallBacker* b );
     void        gridderType( CallBacker* b );
+	void		inpCheck(CallBacker *);
 
     float		factor_;
     float       power_;

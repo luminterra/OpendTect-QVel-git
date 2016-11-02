@@ -7,7 +7,7 @@ ________________________________________________________________________
  (C) dGB Beheer B.V.; (LICENSE) http://opendtect.org/OpendTect_license.txt
  Author:	K. Tingdahl
  Date:		Mar 2006
- RCS:		$Id: moduleheader.h.in 32104 2013-10-23 20:11:53Z kristofer.tingdahl@dgbes.com $
+ RCS:		$Id$
 ________________________________________________________________________
 
 

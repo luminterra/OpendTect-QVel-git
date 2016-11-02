@@ -33,21 +33,21 @@ Ver 1.1 JB West 4/2012
 #include "uiqvelseistools.h"
 #ifdef uiQVel_EXPORTS
 //#pragma message("uiQVel_EXPORTS")
-#define TUT_EXPORTS 1
+#define UIQVEL_EXPORTS 1
 #endif
-#include "uitutmod.h"
-#include "tutmod.h"
-static const int cQVelIdx = -1101;
+#include "uiqvelmod.h"
+#include "qvelmod.h"
+static const int cQVelIdx = -1200;
 
 
 mDefODPluginInfo(uiQVel)
 {
 
     mDefineStaticLocalObject( PluginInfo, retpi,(\
-	"QVel Velocity Model Builder",
+	"QVel Poststack Velocity Modeller",
 	"QVel",
 	"LuminTerra, LLC",
-	"1.0",
+	"1.1",
 	"Quick post-stack seismic velocity model builder."
 	"\nFrom Horizons, T/D curves/markers and stacking velocities") );
 	
@@ -57,7 +57,7 @@ mDefODPluginInfo(uiQVel)
 
 
 class uiQVelMgr :  public CallBacker
-{
+{mODTextTranslationClass(uiQVelMgr);
 public:
     uiQVelMgr(uiODMain*);
 
@@ -69,6 +69,7 @@ public:
     void		do2DSeis(CallBacker*);
     void		do3DSeis(CallBacker*);
     void		launchDialog(Seis::GeomType);
+	void		updateMenu(CallBacker *);
 
 };
 
@@ -76,13 +77,27 @@ public:
 uiQVelMgr::uiQVelMgr( uiODMain* a )
     : appl_(a)
 {
-//    uiMenu* mnu = new uiMenu( appl_, "&QVel Velocity Model builder ..." );
-    uiAction  *mnu = new uiAction("&QVel Velocity Model builder ...",
-	mCB(this,uiQVelMgr,do3DSeis),"horvelanalwinicon.png");
-
-    appl_->menuMgr().analMnu()->insertItem( mnu );
-
+	// jbw ver 6.0 backhanded nonsense to  reinstate menu on survey change
+    mAttachCB(appl_->menuMgr().dTectMnuChanged, uiQVelMgr::updateMenu );
+   // mAttachCB( IOM().surveyToBeChanged, uiQVelMgr::updateMenu );
+	updateMenu(NULL);
+	//uiMenu* mnu = new uiMenu( appl_, tr("QVel Poststack Velocity Modeller"), "horvelanalwinicon.png" );
+    //uiAction  *uia = new uiAction(m3Dots(tr("&QVel Poststack Velocity Modeller")),
+	//mCB(this,uiQVelMgr,do3DSeis) ,"horvelanalwinicon.png"); 
+	//mnu->insertAction(uia);
+   //appl_->menuMgr().analMnu()->insertItem( uia );
+   //appl_->menuMgr().procMnu()->insertItem( uia );
+	//appl_->menuMgr().analMnu()->insertItem( mnu );
+	// appl_->menuMgr().toolsMnu()->insertItem( uia );
 }
+
+void uiQVelMgr::updateMenu( CallBacker* )
+{
+	uiAction  *uia = new uiAction(m3Dots(tr("&QVel Poststack Velocity Modeller")),
+	mCB(this,uiQVelMgr,do3DSeis) ,"horvelanalwinicon.png"); 
+	appl_->menuMgr().analMnu()->insertItem( uia );
+}
+
 void uiQVelMgr::do3DSeis( CallBacker* )
 { launchDialog( Seis::Vol ); }
 
@@ -105,9 +120,11 @@ void uiQVelMgr::launchDialog( Seis::GeomType tp )
 
 mDefODInitPlugin(uiQVel)
 {
-    static uiQVelMgr* mgr = 0; if ( mgr ) return 0;
+    static uiQVelMgr* mgr = 0; 
+	if ( mgr ) return 0;
     mgr = new uiQVelMgr( ODMainWin() );
-
+	if ( !mgr )
+	return "Cannot instantiate QVel plugin";
     //uiQVelAttrib::initClass();
     return 0;
 }
